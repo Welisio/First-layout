@@ -1,0 +1,253 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+:root {
+  --dark: #383838;
+  --light: #fbf7f7;
+  --gray: #ababab;
+}
+.main, .header, .sub-header, .header-elems, .phrase-pic, .phrase-container, .phrase, .btn-container, .about-us,
+.about-us-sub, .about-phrase-specials, .about-specials, .circle, .about-box, .footer, .footer-sub-container,
+.insure-icons, .footer-info, .footer-info-block {
+  display: flex;
+}
+.main {
+  flex-direction: column;
+}
+.hr1 {
+  width: 150px;
+}
+.header {
+  justify-content: center;
+  height: 70px;
+  width: 100%;
+  background: var(--light);
+  box-sizing: border-box;
+}
+.sub-header {
+  width: 75%;
+  justify-content: space-between;
+  align-items: center;
+}
+.insure {
+  font-size: 20px;
+  cursor: pointer;
+}
+.header-elems {
+  align-items: center;
+  margin-right: 10px;
+  color: var(--dark);
+}
+.header-elems div {
+  margin-left: 20px;
+}
+.header-link {
+  color: var(--dark);
+  font-size: 12px;
+}
+.view-plans-btn {
+  border: 2px solid var(--dark);
+}
+.view-plans-btn, .view-plans-btn2 {
+  padding: 5px 15px;
+}
+.phrase-pic {
+  align-items: center;
+  height: 550px;
+  background: #2C2640;
+  color: var(--light);
+  box-sizing: border-box;
+  position: relative;
+}
+.phrase-pic h4 {
+  font-size: 60px;
+}
+.phrase-container {
+  width: 75%;
+  align-items: center;
+  justify-content: center;
+}
+.phrase {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+}
+.phrase-text {
+  width: 500px;
+  line-height: 2;
+  color: var(--gray);
+  font-size: 14px;
+}
+.pic {
+  position: absolute;
+}
+.btn-container {
+  width: 100%;
+  justify-content: left;
+}
+.view-plans-btn2 {
+  border: 2px solid var(--gray);
+
+}
+.phrase-pic-link {
+color: var(--gray);
+font-size: 12px;
+}
+img {
+  height: 450px;
+  top: 400px;
+  right: 90px;
+  position: absolute;
+}
+.about-us {
+  align-items: center;
+  justify-content: center;
+  height: 950px;
+}
+.about-us-sub {
+  height: 750px;
+  width: 80%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.about-phrase-specials {
+  justify-content: space-between;
+  flex-direction: column;
+  height: 350px;
+}
+.about-phrase {
+  font-size: 55px;
+  font-weight: bold;
+  color: var(--dark);
+}
+.about-specials {
+  color: var(--dark);
+}
+.special {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.circle {
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width:  50px;
+  border-radius: 50%;
+  background: #96A9C7;
+  margin-bottom: 20px;
+}
+.icon {
+  color: var(--light);
+}
+.special-container {
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+.hr2 {
+  width: 200px;
+  margin-bottom: 25px;
+}
+.special-header {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.special-text {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--gray);
+}
+.about-box {
+  justify-content: space-between;
+  height: 100px;
+  background: #2C2640;
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  color: var(--light);
+}
+.how-we-work-btn {
+  padding: 7px;
+  border: 2px solid var(--light);
+}
+.how-we-work-link {
+  color: var(--light);
+}
+.about-phrase2 {
+  font-size: 30px;
+  color: var(--light);
+}
+.footer {
+  height: 300px;
+  background: var(--light);
+  align-items: center;
+  justify-content: center;
+}
+.footer-sub-container {
+  height: 210px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.insure-icons {
+  justify-content: space-between;
+  align-items: center;
+}
+.icons {
+  color: var(--gray)
+}
+.footer-info {
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-info-block {
+  height: 130px;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.info-title {
+  color: var(--gray);
+}
+.social-icon {
+  font-size: 20px;
+}
+.social-icon:not(:last-child) {
+  margin-right: 10px;
+}
+.info-subtitles-container > div {
+  margin-bottom: 7px;
+}
+@media only screen and (max-width: 650px) {
+  .sub-header {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .phrase-container {
+    width: 100%;
+  }
+  .about-phrase-specials {
+    height: 430px;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .about-us {
+    height: 1050px;
+  }
+  .about-us-sub {
+    height: 850px;
+  }
+  .about-phrase-specials {
+    height: 530px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  img {
+    height: 300px;
+    right: 20px;
+  }
+}
